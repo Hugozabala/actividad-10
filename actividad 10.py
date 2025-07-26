@@ -10,9 +10,13 @@ def cadena_texto(cadena):
     letras=reversed(cadena)
     return  letras
 
+def suma_numeros(numero):
+    n = numero
+
 menu()
 op=int(input("ingrese opcion a ejecutar"))
 if op==1:
     cad=input ("ingrese cadena a texto")
     print(cadena_texto(cad))
-
+elif op==2:
+    num=int(input("ingrese numero"))
