@@ -11,7 +11,11 @@ def cadena_texto(cadena):
     return  letras
 
 def suma_numeros(numero):
-    n = numero
+    if numero == 1:
+        return 1
+    else:
+        return numero + suma_numeros(numero-1)
+
 
 menu()
 op=int(input("ingrese opcion a ejecutar"))
@@ -20,3 +24,4 @@ if op==1:
     print(cadena_texto(cad))
 elif op==2:
     num=int(input("ingrese numero"))
+    print(suma_numeros(num))
